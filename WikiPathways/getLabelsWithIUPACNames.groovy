@@ -45,7 +45,6 @@ gpmlFiles.each { file ->
       def csid = chemspider.resolve(inchiKey)
       reportLine = "${filename}: node $nodeID -> $name -> $inchiKey -> CSID: $csid";
       logFile << reportLine + "\n" 
-      js.say(reportLine)
     } catch (Exception exception) {
       // OK, it was not an IUPAC name, or no InChIKey, or ...
       println exception.message
