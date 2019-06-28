@@ -1,12 +1,16 @@
 @Grab(group='io.github.egonw.bacting', module='managers-cdk', version='0.0.5')
 @Grab(group='io.github.egonw.bacting', module='managers-ui', version='0.0.5')
 @Grab(group='io.github.egonw.bacting', module='managers-opsin', version='0.0.5')
+@Grab(group='io.github.egonw.bacting', module='managers-inchi', version='0.0.5')
+@Grab(group='io.github.egonw.bacting', module='managers-chemspider', version='0.0.5')
 
 workspaceRoot = ".."
 bioclipse = new net.bioclipse.managers.BioclipseManager(workspaceRoot);
 cdk = new net.bioclipse.managers.CDKManager(workspaceRoot);
 ui = new net.bioclipse.managers.UIManager(workspaceRoot);
 opsin = new net.bioclipse.managers.OpsinManager(workspaceRoot);
+inchi = new net.bioclipse.managers.InChIManager(workspaceRoot);
+chemspider = new net.bioclipse.managers.ChemspiderManager(workspaceRoot);
 
 bioclipse.requireVersion("2.8")
 
