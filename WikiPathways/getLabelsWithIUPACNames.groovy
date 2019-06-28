@@ -35,7 +35,7 @@ gpmlFiles.each { file ->
   }
   metabolites.each() { node ->
     def nodeID = node.'@GraphId'
-    def name = node.'@TextLabel'.trim()
+    def name = node.'@TextLabel'.trim().replaceAll("\n", " ")
     try {
       def molecule = opsin.parseIUPACName(name)
       structureList.add(molecule)
