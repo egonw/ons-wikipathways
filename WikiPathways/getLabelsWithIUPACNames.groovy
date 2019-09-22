@@ -1,8 +1,8 @@
-@Grab(group='io.github.egonw.bacting', module='managers-cdk', version='0.0.5')
-@Grab(group='io.github.egonw.bacting', module='managers-ui', version='0.0.5')
-@Grab(group='io.github.egonw.bacting', module='managers-opsin', version='0.0.5')
-@Grab(group='io.github.egonw.bacting', module='managers-inchi', version='0.0.5')
-@Grab(group='io.github.egonw.bacting', module='managers-chemspider', version='0.0.5')
+@Grab(group='io.github.egonw.bacting', module='managers-cdk', version='0.0.8')
+@Grab(group='io.github.egonw.bacting', module='managers-ui', version='0.0.8')
+@Grab(group='io.github.egonw.bacting', module='managers-opsin', version='0.0.8')
+@Grab(group='io.github.egonw.bacting', module='managers-inchi', version='0.0.8')
+@Grab(group='io.github.egonw.bacting', module='managers-chemspider', version='0.0.8')
 
 workspaceRoot = ".."
 bioclipse = new net.bioclipse.managers.BioclipseManager(workspaceRoot);
